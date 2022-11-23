@@ -1,0 +1,64 @@
+.developers > h1 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: -100px;
+}
+.layout-container {
+  flex-direction: column;
+  flex: 1;
+  border: rgb(24, 23, 23);
+  border-width: 2px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  height: "95%";
+  justify-content: "flex-start";
+  padding: 10px;
+  margin: 5px;
+}
+.developerdetail-total {
+  flex-direction: row;
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+  grid-template-rows: [row] auto [row] auto [row];
+  background-color: #fff;
+  color: #444;
+}
+
+.col {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
+}
+
+.b {
+  grid-column: col 3 / span 2;
+  grid-row: row;
+}
+
+.c {
+  grid-column: col;
+  grid-row: row 2;
+}
+
+.d {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+}
+
+.e {
+  grid-column: col / span 4;
+  grid-row: row 3;
+}
