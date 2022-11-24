@@ -33,7 +33,11 @@ export const TrainIndex = () => {
       <div style={{ display: "flex", flexDirection: "row" }}>
         <h2 style={{ color: "gray" }}>Cars:</h2>
         {cars.map((car, index) => {
-          return <h2 onClick={() => removeCar(index)}>{car},</h2>;
+          return (
+            <h2 key={index} onClick={() => removeCar(index)}>
+              {car},
+            </h2>
+          );
         })}
       </div>
       <h1>Result:</h1>

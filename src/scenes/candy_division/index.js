@@ -23,8 +23,8 @@ export const CandyIndex = () => {
         <button onClick={divive_candy}>Divide</button>
       </div>
       <div style={{ display: "flex", flexDirection: "row" }}>
-        {answers.map((item) => {
-          return <h4>{item},</h4>;
+        {answers.map((item, index) => {
+          return <h4 key={index}>{item},</h4>;
         })}
       </div>
     </div>

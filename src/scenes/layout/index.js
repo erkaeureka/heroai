@@ -19,12 +19,12 @@ const Header = ({ title }) => {
 };
 const GridLayout = () => {
   return (
-    <div class="container">
-      <div class="col a">A</div>
-      <div class="col b">B</div>
-      <div class="col c">C</div>
-      <div class="col d">D</div>
-      <div class="col e">E</div>
+    <div className="container">
+      <div className="col a">A</div>
+      <div className="col b">B</div>
+      <div className="col c">C</div>
+      <div className="col d">D</div>
+      <div className="col e">E</div>
     </div>
   );
 };
